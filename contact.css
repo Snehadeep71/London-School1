@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-----------sec-01 css starts here----------*/
+.csec-01 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 50vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.csec-01 h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.csec-01 h1::before {
+    content: '';
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 240px;
+    height: 3px;
+    background-color: #ff4500;
+}
+
+.csec-01 h1::after {
+    content: '';
+    position: absolute;
+    bottom: 11px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 6px;
+    background-color: #ff4500;
+}
+
+.csec-01 p {
+    line-height: 1.6;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    max-width: 80%;
+}
+
+@media only screen and (min-width:200px) and (max-width:1336px) {
+    .csec-01 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .csec-01 h1 {
+        margin-top: 20px;
+    }
+
+    .csec-01 h1::before {
+        width: 200px;
+    }
+}
+
+/*-----------sec-01 css ends here----------*/
+/*-----------sec-02 css starts here----------*/
+.csec-02 {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(249, 210, 217);
+
+}
+
+.contactinfo {
+    max-width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-top: 10%;
+
+
+}
+
+.phoneInfo i {
+    font-size: 1.7rem;
+    color: rgb(237, 42, 74);
+}
+
+.phoneInfo p:first-of-type {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.phoneInfo p:last-of-type {
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+.contactFormContent {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+.contactLeftForm,
+.contactRight {
+    width: 40%;
+
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.form1 input,
+.form1 textarea {
+    max-width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.form1 textarea {
+    height: fit-content;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.form1 label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.contactRight img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    /* Ensures the image does not exceed 500px width */
+    object-fit: cover;
+    /* Ensures the image covers the container without distortion */
+
+}
+
+.contactLeftForm h2 {
+    font-size: 2.5rem;
+    position: relative;
+    text-align: left;
+}
+
+.contactLeftForm h2::before {
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    left: 22%;
+    width: 240px;
+    height: 3px;
+    background-color: #ff4500;
+    transform: translateX(-50%);
+
+}
+
+.contactLeftForm h2::after {
+    position: absolute;
+    content: '';
+    bottom: -1px;
+    width: 50px;
+    left: 22%;
+    height: 6px;
+    background-color: #ff4500;
+    transform: translateX(-50%);
+
+}
+
+@media only screen and (min-width:200px) and (max-width:1336px) {
+    .csec-02 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .contactinfo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding-top: 0;
+        margin: 0;
+
+    }
+
+    .phoneInfo {
+        padding: 20px 0px;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .contactFormContent {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+
+    .contactLeftForm {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+
+    }
+
+    .form1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        align-self: center;
+        align-items: center;
+
+    }
+
+    .form1 input,
+    .form1 textarea {
+        width: 100%;
+    }
+
+    .contactLeftForm,
+    .contactRight {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .contactRight {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contactRight img {
+        width: 100%;
+        object-fit: cover;
+        height: auto;
+        max-width: none;
+    }
+
+    .contactLeftForm h2::after {
+        
+        left: 50%;
+       
+    }
+    .contactLeftForm h2::before {
+        
+        left: 50%;
+       
+    }
+}
+
+/*-----------sec-02 css ends here----------*/
+/*-----------sec-03 css starts here----------*/
+.csec-03 {
+    width: 100%;
+    display: flex;
+    height: auto;
+}
+
+.csec-03 iframe {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    /* Ensure the iframe takes full height of its container */
+}
+
+@media only screen and (min-width: 200px) and (max-width: 1336px) {
+    .csec-03 {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        /* Ensure the section takes full height */
+    }
+
+    .csec-03 iframe {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        /* Ensure the iframe takes full height of its container */
+    }
+}
+
+/*-----------sec-03 css ends here----------*/
+/*-----------sec-04 css starts here----------*/
+.csec-04 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #000;
+    width: 100%;
+    min-height: 20vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.csec-04 h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.follow-section {
+    flex-direction: row;
+    gap: 20px;
+}
+
+.follow-section a {
+    color: #fff;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-size: 25px;
+
+
+    border-radius: 200px;
+}
+
+/*-----------sec-04 css ends here----------*/

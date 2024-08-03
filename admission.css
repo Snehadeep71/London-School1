@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sec-02{
+    width: 100%;
+    min-height: 120vh;
+}
+.sec02leftcontainer {
+    
+    flex: 1;
+    width: 48%;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sec02leftcontainer h1 {
+    padding-top: 20px;
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+}
+.sec02leftcontainer p{
+    text-align: center;
+    align-items: center;
+}
+.sec02leftcontainer p:first-of-type{
+    font-size: 1.3rem;
+    color: #000;
+    font-weight: bold;
+}
+.sec02leftcontainer p:last-of-type{
+    font-size: 1rem;
+    color: #000;
+    font-weight: bold;
+}
+
+.sec02leftcontainer form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sec02leftcontainer form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.sec02leftcontainer form input,
+.sec02leftcontainer form select {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.sec02leftcontainer form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sec02leftcontainer form button:hover {
+    background-color: #0056b3;
+}
+.sec02rightcontainer img{
+    margin-top: 50px;
+}
+.data1 ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data1 ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.data1 ul li::before {
+    content: '•';
+    position: absolute;
+    left: -15px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.data1 ul li:first-child::before {
+    content: '';
+}
+
+/* Responsive adjustments */
+@media only screen and (min-width:200px) and (max-width:1336px  ) {
+    .sec-02{
+        width: 100%;
+        height: auto;
+    }
+    .sec02leftcontainer {
+        max-width: 100%;
+        padding: 10px;
+    }
+    .sec02leftcontainer input{
+        width: 100%;
+    }
+    .data1 ul {
+        flex-direction: column;
+    }
+
+    .data1 ul li::before {
+        display: none;
+    }
+}
